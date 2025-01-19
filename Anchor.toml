@@ -1,18 +1,18 @@
 [toolchain]
 
 [features]
-resolution = true
+seeds = false
 skip-lint = false
 
 [programs.localnet]
-spl_token_transfer = "2rq8r8cKA5dTpTs6yJhxMBbUyDyunHwVK6S73Z5uK8Jg"
+spl_token_transfer = "6GmLK8Qz9hBnCa89jcaVoX4b8nKCYc62p4hUbZ5XrsBL"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
-wallet = "~/.config/solana/id.json"
+cluster = "Devnet"
+wallet = "/home/mitsuru/workspace/01_19_2025/Solana-Transfer-program/bosN84HZK1mttqMYCjiPmciFSi2EvYkr175DrsCe3sZ.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
